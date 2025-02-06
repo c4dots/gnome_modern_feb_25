@@ -13,7 +13,7 @@ These extensions are going to be installed:
 ---
 
 ### 🎨 Theme, Icons & Fonts
-- 🖌️ Theme: [Colloid Dark](https://github.com/imarkoff/Marble-shell-theme)
+- 🖌️ Theme: [Colloid Dark](https://github.com/vinceliuice/Colloid-gtk-theme)
 - 🎭 Icons: [Futura](https://github.com/coderhisham/Futura-Icon-Pack)
 - 🔤 Font: Ubuntu Regular (11), Sans (11), Ubuntu Mono (13)
 
