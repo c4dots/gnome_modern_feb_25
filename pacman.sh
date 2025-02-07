@@ -142,6 +142,6 @@ dconf load / < ./conf/desktop
 
 echo ">> Done."
 
-if [ "$USE_SEARCH_LIGHT" = true ]; then
+if [ "$DO_REBOOT" = true ]; then
     sudo reboot now
 fi
