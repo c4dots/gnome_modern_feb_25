@@ -4,7 +4,7 @@ document-font-name='Sans 11'
 font-antialiasing='rgba'
 font-hinting='slight'
 font-name='Ubuntu 11'
-gtk-theme='Graphite-teal-Dark-nord'
+gtk-theme='Colloid-Dark'
 icon-theme='Futura'
 monospace-font-name='Ubuntu Mono 13'
 
