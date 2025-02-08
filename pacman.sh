@@ -12,6 +12,7 @@ USE_DIODON=true
 DO_UPDATE=true
 USE_SEARCH_LIGHT=true
 DO_REBOOT=true
+IGNORE_WRONG_ATTR=false
 PACKAGES=("nautilus" "git" "python3" "ttf-ubuntu-font-family" "gnome-shell-extensions" "gnome-text-editor" "gnome-tweaks" "gnome-shell-extension-desktop-icons-ng" "gnome-shell-extension-arc-menu" "gnome-shell-extension-dash-to-panel")
 for ARG in "$@"; do
   case $ARG in
@@ -36,8 +37,14 @@ for ARG in "$@"; do
     --no-reboot)
       DO_REBOOT=false
       ;;
+    --ignore-wrong-attr)
+      IGNORE_WRONG_ATTR=true
+      ;;
     *)
-      echo ">> Usage: $0 [--no-theme] [--no-icons] [--no-background] [--no-diodon] [--no-update] [--no-search-light] [--no-reboot]"
+      echo ">> Usage: $0 [--no-theme] [--no-icons] [--no-background] [--no-diodon] [--no-update] [--no-search-light] [--no-reboot] [--ignore-wrong-attr]"
+      if [[ "$IGNORE_WRONG_ATTR" == false ]]; then
+          exit 1
+      fi
       ;;
   esac
 done
