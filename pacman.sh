@@ -41,8 +41,8 @@ for ARG in "$@"; do
       IGNORE_WRONG_ATTR=true
       ;;
     *)
-      echo ">> Usage: $0 [--no-theme] [--no-icons] [--no-background] [--no-diodon] [--no-update] [--no-search-light] [--no-reboot] [--ignore-wrong-attr]"
       if [[ "$IGNORE_WRONG_ATTR" == false ]]; then
+          echo ">> Usage: $0 [--no-theme] [--no-icons] [--no-background] [--no-diodon] [--no-update] [--no-search-light] [--no-reboot] [--ignore-wrong-attr]"
           exit 1
       fi
       ;;
