@@ -73,7 +73,7 @@ if [ "$USE_THEME" = true ]; then
 
     git clone https://github.com/vinceliuice/Graphite-gtk-theme
     cd Graphite-gtk-theme
-    sh install.sh --name "Graphite-teal-Dark-nord" --tweaks rimless black nord # -c dark
+    sh install.sh --name "Graphite-teal-Dark-nord" --tweaks rimless nord -c dark
     cd ..
 fi
 
