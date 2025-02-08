@@ -38,7 +38,6 @@ for ARG in "$@"; do
       ;;
     *)
       echo ">> Usage: $0 [--no-theme] [--no-icons] [--no-background] [--no-diodon] [--no-update] [--no-search-light] [--no-reboot]"
-      exit 1
       ;;
   esac
 done
