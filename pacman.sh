@@ -66,22 +66,31 @@ echo " | PACKAGES=$PACKAGES"
 # Shell Theme
 if [ "$USE_THEME" = true ]; then
     echo ">> Installing theme..."
-    git clone https://github.com/vinceliuice/Colloid-gtk-theme
-    cd Colloid-gtk-theme
-    sh install.sh
-    cd ..
 
-    git clone https://github.com/vinceliuice/Graphite-gtk-theme
-    cd Graphite-gtk-theme
-    sh install.sh --name "Graphite-teal-Dark-nord" --tweaks rimless nord -c dark
-    cd ..
+    if [ ! -d "$HOME/.themes/Colloid-Dark" ]; then
+        git clone https://github.com/vinceliuice/Colloid-gtk-theme
+        cd Colloid-gtk-theme
+        sh install.sh
+        cd ..
+    else
+        echo ">> Theme already installed, skipping."
+    fi
+
+    #git clone https://github.com/vinceliuice/Graphite-gtk-theme
+    #cd Graphite-gtk-theme
+    #sh install.sh --name "Graphite-teal-Dark-nord" --tweaks rimless nord -c dark
+    #cd ..
 fi
 
 # Icon Theme
 if [ "$USE_ICONS" = true ]; then
-    echo ">> Installing icon theme..."
-    git clone https://github.com/coderhisham/Futura-Icon-Pack
-    cp -R Futura-Icon-Pack ~/.icons/Futura
+    if [ ! -d "$HOME/.icons/Futura" ]; then
+        echo ">> Installing icon theme..."
+        git clone https://github.com/coderhisham/Futura-Icon-Pack
+        cp -R Futura-Icon-Pack ~/.icons/Futura
+    else
+        echo ">> Icon theme already installed, skipping."
+    fi
 fi
 
 # Background
