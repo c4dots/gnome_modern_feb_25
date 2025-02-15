@@ -154,6 +154,8 @@ dconf load / < ./conf/extensions/searchlight
 dconf load / < ./conf/desktop
 #################### CONFIG ####################
 
+cd ..
+rm -R gnome_green_feb_25
 
 echo ">> Done."
 
