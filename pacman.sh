@@ -112,6 +112,8 @@ gnome-extensions enable ding@rastersoft.com
 gnome-extensions enable arcmenu@arcmenu.com
 gnome-extensions enable dash-to-panel@jderose9.github.com
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+gnome-extensions disable top-bar-organizer@julian.gse.jsts.xyz
+gnome-extensions disable openbar@neuromorph
 
 echo ">> Loading configs..."
 dconf load / < ./conf/apps/gedit
