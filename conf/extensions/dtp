@@ -30,3 +30,4 @@ trans-panel-opacity=0.0
 trans-use-custom-opacity=true
 tray-padding=-1
 window-preview-title-position='TOP'
+stockgs-keep-top-panel=false
