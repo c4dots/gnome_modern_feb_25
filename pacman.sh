@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Clone repo
-git clone https://github.com/c4dots/gnome_white_feb_25
-cd gnome_white_feb_25
+git clone https://github.com/c4dots/gnome_modern_feb_25
+cd gnome_modern_feb_25
 
 # Args
 DO_UPDATE=true
