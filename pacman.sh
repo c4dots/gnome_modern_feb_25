@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Clone repo
+cd ~
 git clone https://github.com/c4dots/gnome_modern_feb_25
 cd gnome_modern_feb_25
 
@@ -112,6 +113,8 @@ gnome-extensions enable ding@rastersoft.com
 gnome-extensions enable arcmenu@arcmenu.com
 gnome-extensions enable dash-to-panel@jderose9.github.com
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+
+cd ~/gnome_modern_feb_25
 
 echo ">> Loading configs..."
 dconf load / < ./conf/apps/gedit
