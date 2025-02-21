@@ -9,5 +9,6 @@ monitor-count=3
 preferred-monitor=0
 scale-height=0.17000000000000001
 scale-width=0.12
+text-color=(1.0, 1.0, 1.0, 1.0)
 secondary-shortcut-search=['<Control><Alt>space']
 shortcut-search=['<Shift><Control>a']
