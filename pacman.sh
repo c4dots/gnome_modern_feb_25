@@ -95,12 +95,13 @@ if [ -d "$HOME/.oh-my-zsh" ]; then
 else
     echo ">> Installing Oh my ZShell..."
     yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    sed -i 's/ZSH_THEME=".*"/ZSH_THEME="jonathan"/' ~/.zshrc
-    source ~/.zshrc
     dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/binding "'<Super>t'"
     dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/command "'gnome-terminal -- zsh'"
     dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/name "'terminal'"
 fi
+echo ">> Changing ZSH Theme!"
+sed -i 's/ZSH_THEME=".*"/ZSH_THEME="agnoster"/' ~/.zshrc
+source ~/.zshrc
 #################### PACKAGES ####################
 
 
